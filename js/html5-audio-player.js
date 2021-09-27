@@ -70,4 +70,6 @@ Amplitude.init({
         sample_rate: 50
     }
 });
-document.getElementById('large-visualization').style.height = document.getElementById('album-art').offsetWidth + 'px';
+if (document.getElementById('album-art')) {
+    document.getElementById('large-visualization').style.height = document.getElementById('album-art').offsetWidth + 'px';
+}
